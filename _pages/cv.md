@@ -9,6 +9,11 @@ redirect_from:
 
 {% include base_path %}
 
+## Contact
+- Email: Haoyang.Pei@nyulangone.org | hp2173@nyu.edu
+- Phone: +1 (347) 248-4237
+- Google Scholar: [scholar.google.com/citations?user=AgCKjicAAAAJ](https://scholar.google.com/citations?user=AgCKjicAAAAJ&hl=en&oi=ao)
+
 ## Education
 - **PhD, Electrical and Computer Engineering**, New York University (2022–present)
 - **MS, Computer Engineering**, New York University (2020–2022)
