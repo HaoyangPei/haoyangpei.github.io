@@ -9,6 +9,10 @@ redirect_from:
 
 I am a PhD candidate in Electrical and Computer Engineering at New York University Tandon School of Engineering and a research assistant at NYU Langone Health's Center for Advanced Imaging Innovation and Research. My work combines self-supervised and hybrid deep learning with accelerated MRI acquisition to deliver faster, higher-quality 4D reconstructions and quantitative mapping across organs, field strengths, and contrast mechanisms.
 
+### Latest updates
+- **Jan 2026**: Presented **DeepGrasp** at the ISMRM Workshop on Data Sampling & Image Reconstruction (oral), showcasing a single self-supervised model for highly accelerated 4D golden-angle radial MRI across organs.
+- **2025**: Released the **Hybrid Learning** framework for joint MRI reconstruction and denoising in low-field settings (under review) and received Dr. Li's Publication Award at NYU Tandon.
+
 ### Research highlights
 - **DeepGrasp**: foundation-style self-supervised model for highly accelerated 4D golden-angle radial MRI that generalizes across organs, spatial resolutions, and temporal dynamics while cutting inference to milliseconds per slice.
 - **Hybrid Learning**: two-stage self-supervised + supervised pipeline for joint MRI reconstruction and denoising when only low-SNR references are available, demonstrated on low-field lung and brain imaging.
