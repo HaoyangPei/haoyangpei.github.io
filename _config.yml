@@ -21,7 +21,7 @@ repository               : "haoyangpei/haoyangpei.github.io"
 #               Additional customization can be done by editing /_includes/author-profile.html
 author:
   # Biographic information
-  avatar           : "profile.png"
+  avatar           : "headshot-haoyang.png"
   name             : "Haoyang Pei"
   pronouns         :
   bio              : "Applied Scientist Intern at Microsoft Research, PhD candidate at NYU Tandon, and research assistant at NYU Langone Health working on MRI reconstruction and quantitative imaging."
