@@ -1,16 +1,32 @@
 ---
 layout: archive
-title: "Talks and presentations"
+title: "Conference Proceedings"
 permalink: /talks/
 author_profile: true
+description: "Conference papers, oral presentations, power pitches, and posters in MRI reconstruction, quantitative imaging, and computer vision."
 ---
 
-{% if site.talkmap_link == true %}
+<p class="wordwrap">Each title links to its official proceedings, abstract, or conference program page.</p>
 
-<p style="text-decoration:underline;"><a href="/talkmap.html">See a map of all the places I've given a talk!</a></p>
-
-{% endif %}
-
-{% for post in site.talks reversed %}
-  {% include archive-single-talk.html %}
+{% assign conferences_by_year = site.data.conferences | group_by: "year" %}
+{% for year in conferences_by_year %}
+  <section class="conference-year" aria-labelledby="conference-year-{{ year.name }}">
+    <h2 id="conference-year-{{ year.name }}">{{ year.name }}</h2>
+    <div class="conference-list">
+      {% for conference in year.items %}
+        <article class="conference-entry">
+          <div class="conference-entry__meta">
+            <span>{{ conference.format }}</span>
+            {% if conference.recognition and conference.recognition != "" %}<span class="conference-entry__recognition">{{ conference.recognition }}</span>{% endif %}
+          </div>
+          <h3 class="conference-entry__title">
+            <a href="{{ conference.url }}">{{ conference.title }}</a>
+          </h3>
+          <p class="conference-entry__event">{{ conference.event }}</p>
+          <p class="conference-entry__authors">{{ conference.authors }}</p>
+          <a class="conference-entry__link" href="{{ conference.url }}">View official proceedings &rarr;</a>
+        </article>
+      {% endfor %}
+    </div>
+  </section>
 {% endfor %}

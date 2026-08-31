@@ -1,0 +1,48 @@
+---
+layout: default
+---
+
+{% include base_path %}
+
+<main id="main-content" class="academic-shell">
+  <div class="academic-layout{% unless page.author_profile %} academic-layout--wide{% endunless %}">
+    {% include sidebar.html %}
+
+    <article class="academic-page" itemscope itemtype="https://schema.org/CreativeWork">
+      <header class="academic-page__header">
+        {% if page.collection %}<p class="eyebrow">{{ page.collection | capitalize }}</p>{% endif %}
+        <h1 class="page__title" itemprop="headline">{{ page.title | markdownify | remove: "<p>" | remove: "</p>" }}</h1>
+
+        {% if page.collection == 'teaching' %}
+          <p class="academic-page__meta">{{ page.type }} · {{ page.venue }} · {{ page.date | date: "%Y" }}</p>
+        {% elsif page.collection == 'talks' %}
+          <p class="academic-page__meta">{{ page.type | default: page.talk_type }} · {{ page.venue }}{% if page.location %} · {{ page.location }}{% endif %} · {{ page.date | date: "%B %Y" }}</p>
+        {% elsif page.venue and page.date %}
+          <p class="academic-page__meta">{{ page.venue }} · {{ page.date | date: "%Y" }}</p>
+        {% elsif page.date %}
+          <p class="academic-page__meta">{{ page.date | date: "%B %d, %Y" }}</p>
+        {% endif %}
+      </header>
+
+      <section class="page__content" itemprop="text">
+        {{ content }}
+
+        {% if page.citation or page.paperurl or page.slidesurl %}
+          <aside class="citation-box" aria-label="Publication resources">
+            {% if page.citation %}
+              <p class="citation-box__label">Citation</p>
+              <p>{{ page.citation }}</p>
+            {% endif %}
+            <div class="citation-box__links">
+              {% if page.paperurl and page.paperurl != "" %}<a href="{{ page.paperurl }}">Paper / DOI</a>{% endif %}
+              {% if page.slidesurl and page.slidesurl != "" %}<a href="{{ page.slidesurl }}">Slides</a>{% endif %}
+              {% if page.link %}<a href="{{ page.link }}">External link</a>{% endif %}
+            </div>
+          </aside>
+        {% elsif page.link %}
+          <p><a class="academic-button" href="{{ page.link }}">External link</a></p>
+        {% endif %}
+      </section>
+    </article>
+  </div>
+</main>
