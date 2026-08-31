@@ -3,6 +3,7 @@ layout: archive
 title: "CV"
 permalink: /cv/
 author_profile: true
+description: "Education, work and research experience, publications, conference proceedings, awards, teaching, and technical expertise."
 redirect_from:
   - /resume
 ---
@@ -10,65 +11,118 @@ redirect_from:
 {% include base_path %}
 
 ## Contact
-- Email: Haoyang.Pei@nyulangone.org | hp2173@nyu.edu
+
+- Email: [Haoyang.Pei@nyulangone.org](mailto:Haoyang.Pei@nyulangone.org) · [hp2173@nyu.edu](mailto:hp2173@nyu.edu)
 - Phone: +1 (347) 248-4237
-- Google Scholar: [scholar.google.com/citations?user=AgCKjicAAAAJ](https://scholar.google.com/citations?user=AgCKjicAAAAJ&hl=en&oi=ao)
+- [Google Scholar](https://scholar.google.com/citations?user=AgCKjicAAAAJ&hl=en&oi=ao)
+
+## Research interests
+
+Deep learning, computer vision, low-level vision, MRI reconstruction and denoising, and generative models.
 
 ## Education
-- **PhD, Electrical and Computer Engineering**, New York University (2022–present)
-- **MS, Computer Engineering**, New York University (2020–2022)
-- **BE, Electrical Engineering and Automation**, North China Electric Power University (2013–2017)
 
-## Research experience (Machine Learning)
-- **DeepGrasp: All-in-One Self-Supervised 4D Radial MRI Reconstruction** — Center for Advanced Imaging Innovation and Research, NYU Langone Health (mentors: Dr. Li Feng, Dr. Yao Wang)
-  - Built a unified self-supervised framework for 2–3 spokes/frame 4D golden-angle radial MRI using a 22,307-slice multi-organ dataset.
-  - Trained a single foundation-style model across organs, spatial resolutions, and dynamics; enabled 200–300 ms/slice inference via subspace-constrained reconstruction.
-  - Delivered strong out-of-domain generalization over GRASP-Pro for both DCE and non-DCE applications.
-- **Hybrid Learning for Joint MRI Reconstruction and Denoising** — NYU Langone Health (mentors: Dr. Li Feng, Dr. Yao Wang)
-  - Combined self-supervised and supervised stages to reconstruct accelerated low-field MRI using only low-SNR references.
-  - Demonstrated superior quality across lung and brain datasets at 0.55 T and 0.3 T versus standard baselines.
-- **DeepEMC-T2 Mapping** — NYU Langone Health (mentors: Dr. Li Feng, Dr. Yao Wang)
-  - Designed a modified U-Net to estimate T2 and proton density from multi-echo spin-echo images without a dictionary.
-  - Achieved 3–12% T2 error and <2% PD error using as few as 3–10 echoes.
-- **Rapid 3D T1 Mapping with Deep Learning-Assisted LLIR MRI** — NYU Langone Health (mentors: Dr. Li Feng, Dr. Yao Wang)
-  - Proposed a dual-residual U-Net for 3D T1 maps from continuous LLIR imaging and reduced acquisition time from 169 s to 76 s.
-- **DSC-Derived Perfusion Maps from DCE MRI** — BMEII, Icahn School of Medicine at Mount Sinai (mentor: Dr. Xiang Xu)
-  - Created a conditional GAN to synthesize DSC-MRI parameter maps from DCE MRI, avoiding a second contrast injection and mitigating susceptibility artifacts.
-- **Edge-Assisted Perception for Wearable Navigation** — NYU Video Lab (mentor: Dr. Yao Wang)
-  - Evaluated object detection under compression and distance constraints; implemented YOLOv5 and RA-YOLO on real-world urban footage.
+- **PhD, Electrical and Computer Engineering**, New York University, Tandon School of Engineering — September 2022–Present
+- **MS, Computer Engineering**, New York University, Tandon School of Engineering — September 2020–May 2022
+- **BE, Electrical Engineering and Automation**, North China Electric Power University — September 2013–June 2017
 
 ## Work experience
-- **Research Assistant (Machine Learning)** — Center for Advanced Imaging Innovation and Research, NYU Langone Health (Feb 2023–present)
-- **Research Assistant (Machine Learning)** — NYU Video Lab, New York University (Jun 2021–present)
-- **Research Assistant (Machine Learning)** — BMEII, Icahn School of Medicine at Mount Sinai (Jun 2022–Feb 2023)
-- **Electrical Engineer** — State Grid Corporation of China (Aug 2017–Aug 2021)
+
+{% for experience in site.data.experience %}
+<div class="cv-experience">
+  <div>
+    <h3>{{ experience.organization }}</h3>
+    <p>{{ experience.role }} · {{ experience.location }}</p>
+  </div>
+  <span>{{ experience.period }}</span>
+  {% if experience.summary %}<p class="cv-experience__summary">{{ experience.summary }}</p>{% endif %}
+</div>
+{% endfor %}
+
+## Research experience
+
+### DeepGrasp: All-in-One Self-Supervised Model for Accelerated 4D Radial MRI
+
+*Center for Advanced Imaging Innovation and Research, NYU Langone Health · Mentors: Dr. Li Feng and Dr. Yao Wang*
+
+- Developed a unified self-supervised framework for highly accelerated 4D golden-angle radial dynamic MRI at 2–3 spokes per frame.
+- Curated a 22,307-slice multi-organ dataset spanning brain, neck, breast, liver, prostate, pediatric, and lung imaging protocols.
+- Trained a single foundation-style model across spatial resolutions, temporal dynamics, and DCE/non-DCE applications.
+- Introduced a subspace-constrained scheme that reduced inference time to 200–300 ms per slice and improved out-of-domain performance over GRASP-Pro.
+
+### Hybrid Learning for Joint MRI Reconstruction and Denoising
+
+*Center for Advanced Imaging Innovation and Research, NYU Langone Health · Mentors: Dr. Li Feng and Dr. Yao Wang*
+
+- Combined self-supervised and supervised training using only low-SNR reference data.
+- Evaluated the approach on simulated and real lung and brain MRI at 0.55 T and 0.3 T.
+- Achieved stronger reconstruction quality across acceleration factors than standard supervised and self-supervised baselines.
+
+### DeepEMC-T2 Mapping
+
+*Center for Advanced Imaging Innovation and Research, NYU Langone Health · Mentors: Dr. Li Feng and Dr. Yao Wang*
+
+- Designed an efficient modified U-Net to estimate T2 and proton-density maps directly from multi-echo spin-echo images without dictionary matching.
+- Achieved 3%–12% T2 error and 0.8%–1.7% proton-density error using as few as 3–10 echoes.
+
+### Rapid 3D T1 Mapping with Deep Learning-Assisted LLIR MRI
+
+*Center for Advanced Imaging Innovation and Research, NYU Langone Health · Mentors: Dr. Li Feng and Dr. Yao Wang*
+
+- Proposed a dual-residual U-Net for continuous 3D LLIR imaging without idle time.
+- Reduced acquisition time from 169 seconds to 76 seconds while maintaining accurate T1 mapping.
+
+### DSC-Derived Perfusion Map Generation from DCE MRI
+
+*BMEII, Icahn School of Medicine at Mount Sinai · Mentor: Dr. Xiang Xu*
+
+- Developed a modified conditional GAN to synthesize DSC-MRI parameter maps from DCE MRI.
+- Evaluated the model in healthy participants and patients with brain tumors, reducing the need for a second contrast injection and mitigating susceptibility artifacts.
+
+### Wireless Offloading for Wearable Navigation
+
+*NSF SCC Project / NYU Video Lab · Mentor: Dr. Yao Wang*
+
+- Studied the effects of compression, bitrate, and object distance on detection performance for visually impaired navigation.
+- Implemented YOLOv5 and Resolution-Adaptive YOLO on compressed urban video and developed a distance-estimation model.
+
+### Absolute Depth Estimation from Monocular Images
+
+*NSF SCC Project / NYU Video Lab · Mentor: Dr. Yao Wang*
+
+- Developed RANSAC-based and self-supervised approaches for recovering absolute depth from a Dense Prediction Transformer.
+- Collected a nine-video New York City dataset with the VIS4ION backpack and achieved 0.39 m mean absolute error for distances within 10 m.
 
 ## Teaching experience
-- **Teaching Assistant, ECE 6123 - Image and Video Processing** — NYU Tandon School of Engineering (Feb 2022–May 2022)
 
-## Awards
-- 1st Place Abstract Award, ISMRM Low Field Study Group (2025)
-- Magna Cum Laude, ISMRM (2023, 2024, 2025)
-- Summa Cum Laude, ISMRM (2023)
-- Dr. Li's Publication Award, NYU Tandon (2025)
-
-## Skills & interests
-Python, PyTorch, MRI reconstruction and quantitative imaging, scientific visualization, PowerPoint design, Photoshop, Lightroom, photography.
+- **Teaching Assistant, ECE 6123 — Image and Video Processing**, NYU Tandon School of Engineering — February–May 2022
 
 ## Publications
-<ul>{% for post in site.publications reversed %}
+
+<ul class="cv-list">{% assign publications_by_date = site.publications | sort: "date" | reverse %}{% for post in publications_by_date %}
   {% include archive-single-cv.html %}
 {% endfor %}</ul>
 
-## Talks
-<ul>{% for post in site.talks reversed %}
-  {% include archive-single-talk-cv.html  %}
-{% endfor %}</ul>
+## Conference proceedings
 
-## Teaching
-<ul>{% for post in site.teaching reversed %}
-  {% include archive-single-cv.html %}
-{% endfor %}</ul>
+<ol class="cv-conference-list">{% for conference in site.data.conferences %}
+  <li>
+    <a href="{{ conference.url }}">{{ conference.title }}</a>
+    <span>{{ conference.event }}, {{ conference.year }} · {{ conference.format }}{% if conference.recognition and conference.recognition != "" %} · {{ conference.recognition }}{% endif %}</span>
+  </li>
+{% endfor %}</ol>
 
-## Service and leadership
-- Built machine learning pipelines and data curation workflows for multi-organ radial MRI and wearable perception studies.
+## Awards
+
+- Summa Cum Laude, ISMRM, 2026
+- 2nd Place Abstract Award, ISMRM AI/ML Study Group, 2026
+- 1st Place Abstract Award, ISMRM Low Field Study Group, 2025
+- Magna Cum Laude, ISMRM, 2025
+- Dr. Li’s Publication Award, NYU Tandon, 2025
+- Magna Cum Laude, ISMRM, 2024
+- Magna Cum Laude, ISMRM, 2023
+- Summa Cum Laude, ISMRM, 2023
+
+## Skills and interests
+
+Python, PyTorch, PowerPoint design, Photoshop, Lightroom, and photography.

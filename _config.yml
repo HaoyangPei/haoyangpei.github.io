@@ -11,7 +11,7 @@ locale                   : "en-US"
 title                    : "Haoyang Pei"
 title_separator          : "-"
 name                     : &name "Haoyang Pei"
-description              : &description "PhD candidate applying machine learning to accelerated MRI reconstruction and quantitative imaging"
+description              : &description "Applied Scientist Intern at Microsoft Research and PhD candidate at NYU Tandon, with research interests in deep learning, computer vision, MRI, and generative models"
 url                      : https://haoyangpei.github.io # the base hostname & protocol for your site e.g. "https://mmistakes.github.io"
 baseurl                  : "" # the subpath of your site, e.g. "/blog"
 repository               : "haoyangpei/haoyangpei.github.io"
@@ -24,9 +24,9 @@ author:
   avatar           : "profile.png"
   name             : "Haoyang Pei"
   pronouns         :
-  bio              : "PhD candidate at NYU Tandon and research assistant at NYU Langone Health working on self-supervised MRI reconstruction and quantitative imaging."
+  bio              : "Applied Scientist Intern at Microsoft Research, PhD candidate at NYU Tandon, and research assistant at NYU Langone Health working on MRI reconstruction and quantitative imaging."
   location         : "New York, NY"
-  employer         : "NYU Langone Health / NYU Tandon"
+  employer         : "Microsoft Research / NYU Langone Health / NYU Tandon"
   uri              :
   email            : "Haoyang.Pei@nyulangone.org"
 
@@ -134,13 +134,16 @@ facebook:
   username               :
   app_id                 :
   publisher              :
-og_image                 :  # Open Graph/Twitter default site image
+og_image                 : "og.png"
 # For specifying social profiles
 # - https://developers.google.com/structured-data/customize/social-profiles
 social:
-  type                   : # Person or Organization (defaults to Person)
-  name                   : # If the user or organization name differs from the site's name
-  links: # An array of links to social media profiles
+  type                   : Person
+  name                   : Haoyang Pei
+  links:
+    - "https://scholar.google.com/citations?user=AgCKjicAAAAJ&hl=en&oi=ao"
+    - "https://github.com/haoyangpei"
+    - "https://www.linkedin.com/in/haoyang-pei-7634a6200"
 
 
 # Analytics

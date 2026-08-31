@@ -2,23 +2,17 @@
 layout: default
 ---
 
-{% if page.header.overlay_color or page.header.overlay_image or page.header.image %}
-  {% include page__hero.html %}
-{% endif %}
+<main id="main-content" class="academic-shell">
+  <div class="academic-layout{% unless page.author_profile %} academic-layout--wide{% endunless %}">
+    {% include sidebar.html %}
 
-{% if page.url != "/" and site.breadcrumbs %}
-  {% unless paginator %}
-    {% include breadcrumbs.html %}
-  {% endunless %}
-{% endif %}
-
-<div id="main" role="main">
-  {% include sidebar.html %}
-
-  <div class="archive">
-    {% unless page.header.overlay_color or page.header.overlay_image %}
-      <h1 class="page__title">{{ page.title }}</h1>
-    {% endunless %}
-    {{ content }}
+    <section class="academic-page archive" aria-labelledby="page-title">
+      <header class="academic-page__header academic-page__header--archive">
+        <p class="eyebrow">Academic profile</p>
+        <h1 class="page__title" id="page-title">{{ page.title }}</h1>
+        {% if page.description %}<p class="academic-page__lead">{{ page.description }}</p>{% endif %}
+      </header>
+      {{ content }}
+    </section>
   </div>
-</div>
+</main>
