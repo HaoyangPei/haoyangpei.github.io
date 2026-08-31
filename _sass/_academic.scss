@@ -650,6 +650,33 @@ h2 { font-size: clamp(1.45rem, 2.5vw, 2rem); }
 
 .research-entry__title a:hover { color: var(--accent); }
 
+.research-entry__authors,
+.academic-page__authors {
+  margin: 0.55rem 0 0;
+  color: var(--muted);
+  font-size: 0.82rem;
+  line-height: 1.6;
+}
+
+.entry-authors__label {
+  margin-right: 0.45rem;
+  color: var(--ink);
+  font-size: 0.68rem;
+  font-weight: 750;
+  letter-spacing: 0.07em;
+  text-transform: uppercase;
+}
+
+.research-entry__authors strong,
+.academic-page__authors strong,
+.conference-entry__authors strong,
+.citation-box strong,
+.cv-list strong,
+.cv-conference-list strong {
+  color: var(--ink);
+  font-weight: 800;
+}
+
 .research-entry__venue {
   margin: 0.45rem 0 0;
   color: var(--accent-dark);
@@ -742,7 +769,7 @@ h2 { font-size: clamp(1.45rem, 2.5vw, 2rem); }
 .conference-entry__authors {
   margin: 0.55rem 0 0;
   color: var(--muted);
-  font-size: 0.78rem;
+  font-size: 0.82rem;
   line-height: 1.55;
 }
 
