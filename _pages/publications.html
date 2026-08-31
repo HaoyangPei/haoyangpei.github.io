@@ -12,8 +12,9 @@ description: "Peer-reviewed work and conference contributions in accelerated MRI
 
 {% include base_path %}
 
-{% assign publications_by_date = site.publications | sort: "date" | reverse %}
+{% assign journal_publications = site.publications | where: "category", "manuscripts" %}
+{% assign book_publications = site.publications | where: "category", "books" %}
+{% assign publications_by_date = journal_publications | concat: book_publications | sort: "date" | reverse %}
 {% for post in publications_by_date %}
   {% include archive-single.html %}
 {% endfor %}
-

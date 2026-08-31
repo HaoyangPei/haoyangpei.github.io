@@ -2,5 +2,8 @@
 
 <li class="cv-list__item">
   <a href="{{ post.url | prepend: base_path }}">{{ post.title }}</a>
-  {% if post.citation %}<span>{{ post.citation }}</span>{% elsif post.venue %}<span>{{ post.type }} · {{ post.venue }} · {{ post.date | date: "%Y" }}</span>{% endif %}
+  {% if post.citation %}
+    {% assign highlighted_citation = post.citation | replace: "Haoyang Pei", "<strong>Haoyang Pei</strong>" %}
+    <span>{{ highlighted_citation }}</span>
+  {% elsif post.venue %}<span>{{ post.type }} · {{ post.venue }} · {{ post.date | date: "%Y" }}</span>{% endif %}
 </li>

@@ -99,7 +99,7 @@ Deep learning, computer vision, low-level vision, MRI reconstruction and denoisi
 
 ## Publications
 
-<ul class="cv-list">{% assign publications_by_date = site.publications | sort: "date" | reverse %}{% for post in publications_by_date %}
+<ul class="cv-list">{% assign journal_publications = site.publications | where: "category", "manuscripts" %}{% assign book_publications = site.publications | where: "category", "books" %}{% assign publications_by_date = journal_publications | concat: book_publications | sort: "date" | reverse %}{% for post in publications_by_date %}
   {% include archive-single-cv.html %}
 {% endfor %}</ul>
 
@@ -108,6 +108,8 @@ Deep learning, computer vision, low-level vision, MRI reconstruction and denoisi
 <ol class="cv-conference-list">{% for conference in site.data.conferences %}
   <li>
     <a href="{{ conference.url }}">{{ conference.title }}</a>
+    {% assign highlighted_authors = conference.authors | replace: "Haoyang Pei", "<strong>Haoyang Pei</strong>" %}
+    <span>{{ highlighted_authors }}</span>
     <span>{{ conference.event }}, {{ conference.year }} · {{ conference.format }}{% if conference.recognition and conference.recognition != "" %} · {{ conference.recognition }}{% endif %}</span>
   </li>
 {% endfor %}</ol>

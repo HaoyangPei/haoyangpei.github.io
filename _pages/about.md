@@ -32,7 +32,9 @@ redirect_from:
   <h2 class="section-label" id="selected-work-heading">Selected work</h2>
   <div>
     <ol class="selected-work">
-      {% assign selected_publications = site.publications | sort: "date" | reverse %}
+      {% assign journal_publications = site.publications | where: "category", "manuscripts" %}
+      {% assign book_publications = site.publications | where: "category", "books" %}
+      {% assign selected_publications = journal_publications | concat: book_publications | sort: "date" | reverse %}
       {% for post in selected_publications limit: 3 %}
         <li class="selected-work__item">
           <span class="selected-work__year">{{ post.date | date: "%Y" }}</span>
