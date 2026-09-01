@@ -1,7 +1,14 @@
 {% include base_path %}
 
 <li class="cv-list__item">
-  <a href="{{ post.url | prepend: base_path }}">{{ post.title }}</a>
+  {% if post.paperurl and post.paperurl != "" %}
+    {% assign entry_url = post.paperurl %}
+  {% elsif post.link and post.link != "" %}
+    {% assign entry_url = post.link %}
+  {% else %}
+    {% assign entry_url = post.url | prepend: base_path %}
+  {% endif %}
+  <a href="{{ entry_url }}">{{ post.title }}</a>
   {% if post.citation %}
     {% assign highlighted_citation = post.citation | replace: "Haoyang Pei", "<strong>Haoyang Pei</strong>" %}
     <span>{{ highlighted_citation }}</span>

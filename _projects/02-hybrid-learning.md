@@ -13,9 +13,9 @@ topics:
   - Low-field MRI
 links:
   - label: "Journal article"
-    url: "/publication/2025-hybrid-learning"
+    url: "https://doi.org/10.1088/1361-6560/ae792b"
   - label: "ISMRM presentation"
-    url: "/talks/2025-hybrid-learning-ismrm"
+    url: "https://archive.ismrm.org/2025/0390.html"
 ---
 
 ## Overview

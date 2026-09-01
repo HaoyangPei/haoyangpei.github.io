@@ -12,10 +12,10 @@ topics:
   - 4D radial MRI
   - Foundation models
 links:
-  - label: "ISMRM 2026 workshop presentation"
-    url: "/talks/2026-deepgrasp-workshop"
-  - label: "Conference project page"
-    url: "/publication/2026-deepgrasp-ismrm"
+  - label: "ISMRM 2026 workshop abstract"
+    url: "https://echo.ismrm.org/abstracts/view/d5f934e5-a549-4f86-8f7a-3c5b07d3df13"
+  - label: "ISMRM 2026 annual meeting abstract"
+    url: "https://echo.ismrm.org/abstracts/view/333be789-79e6-473f-be2b-ea78c51724e8"
 ---
 
 ## Overview

@@ -13,9 +13,9 @@ topics:
   - Image translation
 links:
   - label: "Journal article"
-    url: "/publication/2024-dce-to-dsc"
+    url: "https://doi.org/10.3174/ajnr.A8768"
   - label: "ISMRM presentation"
-    url: "/talks/2023-dce-to-dsc-ismrm"
+    url: "https://archive.ismrm.org/2023/1173.html"
 ---
 
 ## Overview
