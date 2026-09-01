@@ -17,7 +17,13 @@ layout: default
       <div class="home__actions">
         <a class="academic-button" href="{{ base_path }}/projects/">View projects</a>
         <a class="academic-button academic-button--quiet" href="{{ base_path }}/publications/">View publications</a>
-        <a class="academic-button academic-button--quiet" href="mailto:{{ site.author.email }}">Get in touch</a>
+        <details class="home-contact">
+          <summary class="academic-button academic-button--quiet">Get in touch</summary>
+          <div class="home-contact__panel">
+            <a href="mailto:{{ site.author.email }}">{{ site.author.email }}</a>
+            <a href="https://www.linkedin.com/in/{{ site.author.linkedin }}">LinkedIn</a>
+          </div>
+        </details>
       </div>
     </div>
   </section>

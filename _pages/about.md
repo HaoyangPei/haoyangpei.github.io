@@ -9,52 +9,31 @@ redirect_from:
   - /about.html
 ---
 
-<section class="home__section" aria-labelledby="work-experience-heading">
-  <h2 class="section-label" id="work-experience-heading">Work experience</h2>
+<section class="home__section" aria-labelledby="professional-experience-heading">
+  <h2 class="section-label" id="professional-experience-heading">Professional experience</h2>
   <div class="experience-list">
     {% for experience in site.data.experience %}
-      <article class="experience-item">
-        <div class="experience-item__heading">
-          <div>
-            <h3>{{ experience.organization }}</h3>
-            <p class="experience-item__role">{{ experience.role }}</p>
-          </div>
-          <p class="experience-item__period">{{ experience.period }}</p>
+      <details class="experience-item">
+        <summary class="experience-item__summary">
+          <span class="experience-item__heading">
+            <span>
+              <span class="experience-item__organization" role="heading" aria-level="3">{{ experience.organization }}</span>
+              <span class="experience-item__role">{{ experience.role }}</span>
+            </span>
+            <span class="experience-item__period">{{ experience.period }}</span>
+          </span>
+          <span class="experience-item__toggle" aria-hidden="true"></span>
+        </summary>
+        <div class="experience-item__details">
+          <p class="experience-item__location">{{ experience.location }}</p>
+          {% if experience.details %}
+            <ul>
+              {% for detail in experience.details %}<li>{{ detail }}</li>{% endfor %}
+            </ul>
+          {% endif %}
+          {% if experience.project_url %}<a class="experience-item__project-link" href="{{ experience.project_url | prepend: base_path }}">Project portfolio &rarr;</a>{% endif %}
         </div>
-        <p class="experience-item__summary">{{ experience.summary }}</p>
-        <p class="experience-item__location">{{ experience.location }}</p>
-      </article>
+      </details>
     {% endfor %}
   </div>
-</section>
-
-<section class="home__section" aria-labelledby="selected-work-heading">
-  <h2 class="section-label" id="selected-work-heading">Selected work</h2>
-  <div>
-    <ol class="selected-work">
-      {% assign journal_publications = site.publications | where: "category", "manuscripts" %}
-      {% assign book_publications = site.publications | where: "category", "books" %}
-      {% assign selected_publications = journal_publications | concat: book_publications | sort: "date" | reverse %}
-      {% for post in selected_publications limit: 3 %}
-        {% if post.paperurl and post.paperurl != "" %}
-          {% assign entry_url = post.paperurl %}
-        {% else %}
-          {% assign entry_url = post.url | prepend: base_path %}
-        {% endif %}
-        <li class="selected-work__item">
-          <span class="selected-work__year">{{ post.date | date: "%Y" }}</span>
-          <div>
-            <h3 class="selected-work__title"><a href="{{ entry_url }}">{{ post.title }}</a></h3>
-            <p class="selected-work__venue">{{ post.venue }}</p>
-          </div>
-        </li>
-      {% endfor %}
-    </ol>
-    <a class="section-link" href="{{ base_path }}/publications/">All publications &rarr;</a>
-  </div>
-</section>
-
-<section class="home__section" aria-labelledby="collaboration-heading">
-  <h2 class="section-label" id="collaboration-heading">Collaboration</h2>
-  <p class="contact-note">I am interested in collaborations at the intersection of computational imaging, machine learning, and clinical translation. <a href="mailto:{{ site.author.email }}">Send me an email</a> or connect through <a href="{{ site.author.googlescholar }}">Google Scholar</a>.</p>
 </section>
