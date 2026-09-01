@@ -596,6 +596,10 @@ h2 { font-size: clamp(1.45rem, 2.5vw, 2rem); }
   text-decoration: none;
 }
 
+.email-copy--success {
+  color: #25624d !important;
+}
+
 .academic-page {
   width: 100% !important;
   max-width: var(--reading-width);
