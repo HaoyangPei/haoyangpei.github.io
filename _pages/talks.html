@@ -22,7 +22,7 @@ author_profile: true
           {% assign highlighted_authors = conference.authors | replace: "Haoyang Pei", "<strong>Haoyang Pei</strong>" %}
           <p class="conference-entry__authors"><span class="entry-authors__label">Authors</span>{{ highlighted_authors }}</p>
           <p class="conference-entry__event">{{ conference.event }}</p>
-          <a class="conference-entry__link" href="{{ conference.url }}">View official proceedings &rarr;</a>
+          <a class="conference-entry__link" href="{{ conference.url }}">{{ conference.link_label | default: "View official proceedings" }} &rarr;</a>
         </article>
       {% endfor %}
     </div>

@@ -60,7 +60,8 @@
   format: "Oral"
   recognition: "YIA Finalist"
   authors: "Haoyang Pei, Ding Xia, Yao Wang, Hersh Chandarana, Daniel K. Sodickson, Li Feng"
-  url: "https://mrinrt.org/assets/img/program-schedule/archive/program-book_archive.pdf"
+  url: "https://mrinrt.org/archive/#schedule"
+  link_label: "View official conference page"
 
 - year: 2025
   title: "Hybrid Learning: A Novel Combination of Self-Supervised and Supervised Learning for Joint MRI Reconstruction and Denoising Without High-Quality Training Reference"
@@ -68,7 +69,8 @@
   format: "Digital Poster"
   recognition: ""
   authors: "Haoyang Pei, Ding Xia, Xiang Xu, William Moore, Yao Wang, Hersh Chandarana, Li Feng"
-  url: "https://mrinrt.org/assets/img/program-schedule/archive/program-book_archive.pdf"
+  url: "https://mrinrt.org/archive/"
+  link_label: "View official conference page"
 
 - year: 2025
   title: "Hybrid Learning: A Novel Combination of Self-Supervised and Supervised Learning for Joint MRI Reconstruction and Denoising Without High-Quality Training Reference"
