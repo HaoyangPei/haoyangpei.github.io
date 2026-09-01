@@ -2,7 +2,9 @@
 title: "Deep Learning-Optimized GRASP-Pro Reconstruction for Highly-Accelerated DCE-MRI"
 collection: talks
 type: "Conference presentation"
-permalink: /talks/2025-grasppro-ismrm
+permalink: /conference/2025-grasppro-ismrm
+redirect_from:
+  - /talks/2025-grasppro-ismrm
 venue: "ISMRM Annual Meeting"
 date: 2025-05-01
 location: "Oral, Magna Cum Laude"

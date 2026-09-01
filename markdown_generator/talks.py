@@ -20,7 +20,7 @@ import os
 # - Fields that cannot be blank: `title`, `url_slug`, `date`. All else can be blank. `type` defaults to "Talk" 
 # - `date` must be formatted as YYYY-MM-DD.
 # - `url_slug` will be the descriptive part of the .md file and the permalink URL for the page about the paper. 
-#     - The .md file will be `YYYY-MM-DD-[url_slug].md` and the permalink will be `https://[yourdomain]/talks/YYYY-MM-DD-[url_slug]`
+#     - The .md file will be `YYYY-MM-DD-[url_slug].md` and the permalink will be `https://[yourdomain]/conference/YYYY-MM-DD-[url_slug]`
 #     - The combination of `url_slug` and `date` must be unique, as it will be the basis for your filenames
 # 
 
@@ -78,7 +78,7 @@ for row, item in talks.iterrows():
     else:
         md += 'type: "Talk"\n'
     
-    md += "permalink: /talks/" + html_filename + "\n"
+    md += "permalink: /conference/" + html_filename + "\n"
     
     if len(str(item.venue)) > 3:
         md += 'venue: "' + item.venue + '"\n'
@@ -108,4 +108,3 @@ for row, item in talks.iterrows():
 
 
 # These files are in the talks directory, one directory below where we're working from.
-
