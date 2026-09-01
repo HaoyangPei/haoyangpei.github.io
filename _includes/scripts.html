@@ -1,1 +1,10 @@
 {% include analytics.html %}
+
+{% unless asset_version %}
+  {% if site.github.build_revision %}
+    {% assign asset_version = site.github.build_revision %}
+  {% else %}
+    {% assign asset_version = site.time | date: "%s" %}
+  {% endif %}
+{% endunless %}
+<script src="{{ base_path }}/assets/js/email-copy.js?v={{ asset_version }}" defer></script>

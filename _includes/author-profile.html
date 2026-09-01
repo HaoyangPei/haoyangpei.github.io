@@ -18,7 +18,7 @@
   </dl>
 
   <nav class="profile-card__links" aria-label="Academic and social profiles">
-    {% if author.email %}<a href="mailto:{{ author.email }}">Email</a>{% endif %}
+    {% if author.email %}<a href="mailto:{{ author.email }}" data-copy-email="{{ author.email }}" aria-live="polite" title="Copy email address">Email</a>{% endif %}
     {% if author.googlescholar %}<a href="{{ author.googlescholar }}">Scholar</a>{% endif %}
     {% if author.github %}<a href="https://github.com/{{ author.github }}">GitHub</a>{% endif %}
     {% if author.linkedin %}<a href="https://www.linkedin.com/in/{{ author.linkedin }}">LinkedIn</a>{% endif %}

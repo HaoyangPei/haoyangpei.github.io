@@ -20,7 +20,7 @@ layout: default
         <details class="home-contact">
           <summary class="academic-button academic-button--quiet">Get in touch</summary>
           <div class="home-contact__panel">
-            <a href="mailto:{{ site.author.email }}">{{ site.author.email }}</a>
+            <a href="mailto:{{ site.author.email }}" data-copy-email="{{ site.author.email }}" aria-live="polite" title="Copy email address">{{ site.author.email }}</a>
             <a href="https://www.linkedin.com/in/{{ site.author.linkedin }}">LinkedIn</a>
           </div>
         </details>

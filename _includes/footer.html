@@ -3,7 +3,7 @@
 <div class="footer__inner">
   <p>&copy; {{ site.time | date: '%Y' }} {{ site.name | default: site.title }}. Built for clarity and accessibility.</p>
   <div class="footer__links" aria-label="Profile links">
-    {% if site.author.email %}<a href="mailto:{{ site.author.email }}">Email</a>{% endif %}
+    {% if site.author.email %}<a href="mailto:{{ site.author.email }}" data-copy-email="{{ site.author.email }}" aria-live="polite" title="Copy email address">Email</a>{% endif %}
     {% if site.author.googlescholar %}<a href="{{ site.author.googlescholar }}">Google Scholar</a>{% endif %}
     {% if site.author.github %}<a href="https://github.com/{{ site.author.github }}">GitHub</a>{% endif %}
     {% if site.author.linkedin %}<a href="https://www.linkedin.com/in/{{ site.author.linkedin }}">LinkedIn</a>{% endif %}
