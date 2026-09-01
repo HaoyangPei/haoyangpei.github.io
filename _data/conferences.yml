@@ -2,7 +2,7 @@
   title: "All-in-One DeepGrasp: A Unified Self-Supervised Model for Accelerated 4D Radial MRI Across Organs, Resolutions, and Dynamics"
   event: "35th Annual Meeting of ISMRM Conference and Exhibition"
   format: "Oral"
-  recognition: "Summa Cum Laude · AMPC Selection Award"
+  recognition: "Summa Cum Laude (Top 5%) · AMPC Selection Award"
   authors: "Haoyang Pei, Jingjia Chen, Yao Wang, Hersh Chandarana, Li Feng"
   url: "https://echo.ismrm.org/abstracts/view/333be789-79e6-473f-be2b-ea78c51724e8"
 
@@ -18,7 +18,7 @@
   title: "Deep Learning-Optimized GRASP-Pro Reconstruction for Highly-Accelerated DCE-MRI"
   event: "34th Annual Meeting of ISMRM Conference and Exhibition"
   format: "Oral"
-  recognition: "Magna Cum Laude"
+  recognition: "Magna Cum Laude (Top 15%)"
   authors: "Haoyang Pei, Li Feng"
   url: "https://archive.ismrm.org/2025/1136.html"
 
@@ -92,7 +92,7 @@
   title: "DeepGrasp4D: A General Framework for Highly-Accelerated Real-Time 4D Golden-Angle Radial MRI Using Deep Learning"
   event: "33rd Annual Meeting of ISMRM Conference and Exhibition"
   format: "Oral"
-  recognition: "Magna Cum Laude"
+  recognition: "Magna Cum Laude (Top 15%)"
   authors: "Haoyang Pei, Hersh Chandarana, Daniel K. Sodickson, Li Feng"
   url: "https://archive.ismrm.org/2024/0040.html"
 
@@ -140,7 +140,7 @@
   title: "Rapid 3D T1 Mapping Using Deep Learning-Assisted Look-Locker Inversion Recovery MRI"
   event: "32nd Annual Meeting of ISMRM Conference and Exhibition"
   format: "Oral"
-  recognition: "Magna Cum Laude"
+  recognition: "Magna Cum Laude (Top 15%)"
   authors: "Haoyang Pei, Ding Xia, Xiang Xu, Yang Yang, Yao Wang, Fang Liu, Li Feng"
   url: "https://archive.ismrm.org/2023/0678.html"
 
@@ -156,6 +156,6 @@
   title: "DSC-Derived Perfusion Map Generation from DCE MRI Using Deep Learning"
   event: "32nd Annual Meeting of ISMRM Conference and Exhibition"
   format: "Oral"
-  recognition: "Summa Cum Laude · AMPC Selection Award"
+  recognition: "Summa Cum Laude (Top 5%) · AMPC Selection Award"
   authors: "Haoyang Pei, Yixuan Lyu, Sebastian Lambrecht, Doris Lin, Li Feng, Fang Liu, Paul Nyquist, Peter van Zijl, Linda Knutsson, Xiang Xu"
   url: "https://archive.ismrm.org/2023/1173.html"
