@@ -2,7 +2,7 @@
 layout: home
 permalink: /
 title: "Home"
-description: "Haoyang Pei is an Applied Scientist Intern at Microsoft Research and a PhD candidate at NYU Tandon working on machine learning for MRI."
+description: "Haoyang Pei is a Ph.D. candidate in Electrical Engineering at New York University working on AI for healthcare and medical imaging."
 author_profile: false
 redirect_from:
   - /about/

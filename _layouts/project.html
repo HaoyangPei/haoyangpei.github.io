@@ -1,0 +1,53 @@
+---
+layout: default
+---
+
+{% include base_path %}
+
+<main id="main-content" class="academic-shell">
+  <div class="academic-layout">
+    {% include sidebar.html %}
+
+    <article class="academic-page project-detail" itemscope itemtype="https://schema.org/ResearchProject">
+      <header class="academic-page__header">
+        <p class="eyebrow">Research project</p>
+        <h1 class="page__title" itemprop="name">{{ page.title }}</h1>
+        <p class="academic-page__lead" itemprop="description">{{ page.summary }}</p>
+
+        <dl class="project-detail__meta">
+          <div>
+            <dt>Institution</dt>
+            <dd>{{ page.institution }}</dd>
+          </div>
+          <div>
+            <dt>Advisors</dt>
+            <dd>{{ page.advisors }}</dd>
+          </div>
+        </dl>
+
+        {% if page.topics %}
+          <ul class="project-topics" aria-label="Research areas">
+            {% for topic in page.topics %}<li>{{ topic }}</li>{% endfor %}
+          </ul>
+        {% endif %}
+      </header>
+
+      <section class="page__content" itemprop="text">
+        {{ content }}
+
+        {% if page.links %}
+          <section class="project-resources" aria-labelledby="project-resources-heading">
+            <h2 id="project-resources-heading">Related work</h2>
+            <div class="project-resources__links">
+              {% for resource in page.links %}
+                <a href="{{ resource.url }}">{{ resource.label }} &rarr;</a>
+              {% endfor %}
+            </div>
+          </section>
+        {% endif %}
+
+        <a class="project-detail__back" href="{{ base_path }}/projects/">&larr; All projects</a>
+      </section>
+    </article>
+  </div>
+</main>
