@@ -2,6 +2,7 @@
 title: "DeepGrasp: A Unified All-in-One Self-Supervised Model for Accelerated 4D Radial MRI Across Organs, Resolutions, and Dynamics"
 collection: publications
 category: conferences
+published: false
 permalink: /publication/2026-deepgrasp-ismrm
 excerpt: "ISMRM Workshop oral presentation on a foundation-style self-supervised model for highly accelerated 4D golden-angle radial MRI."
 date: 2026-01-15

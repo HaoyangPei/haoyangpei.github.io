@@ -36,10 +36,15 @@ redirect_from:
       {% assign book_publications = site.publications | where: "category", "books" %}
       {% assign selected_publications = journal_publications | concat: book_publications | sort: "date" | reverse %}
       {% for post in selected_publications limit: 3 %}
+        {% if post.paperurl and post.paperurl != "" %}
+          {% assign entry_url = post.paperurl %}
+        {% else %}
+          {% assign entry_url = post.url | prepend: base_path %}
+        {% endif %}
         <li class="selected-work__item">
           <span class="selected-work__year">{{ post.date | date: "%Y" }}</span>
           <div>
-            <h3 class="selected-work__title"><a href="{{ post.url | prepend: base_path }}">{{ post.title }}</a></h3>
+            <h3 class="selected-work__title"><a href="{{ entry_url }}">{{ post.title }}</a></h3>
             <p class="selected-work__venue">{{ post.venue }}</p>
           </div>
         </li>

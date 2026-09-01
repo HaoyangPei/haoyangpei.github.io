@@ -1,4 +1,11 @@
 {% include base_path %}
+{% if post.paperurl and post.paperurl != "" %}
+  {% assign entry_url = post.paperurl %}
+{% elsif post.link and post.link != "" %}
+  {% assign entry_url = post.link %}
+{% else %}
+  {% assign entry_url = post.url | prepend: base_path %}
+{% endif %}
 
 <article class="research-entry" itemscope itemtype="https://schema.org/ScholarlyArticle">
   <div class="research-entry__meta">
@@ -7,7 +14,7 @@
   </div>
 
   <h2 class="research-entry__title" itemprop="headline">
-    <a href="{{ post.url | prepend: base_path }}" rel="permalink">{{ post.title }}</a>
+    <a href="{{ entry_url }}">{{ post.title }}</a>
   </h2>
 
   {% if post.authors %}
@@ -18,9 +25,11 @@
   {% if post.excerpt %}<div class="research-entry__summary" itemprop="description">{{ post.excerpt | markdownify }}</div>{% endif %}
 
   <div class="research-entry__links">
-    <a href="{{ post.url | prepend: base_path }}">Details</a>
-    {% if post.paperurl and post.paperurl != "" %}<a href="{{ post.paperurl }}">Paper / DOI</a>{% endif %}
+    {% if post.category == "books" %}
+      <a href="{{ entry_url }}">View publisher page &rarr;</a>
+    {% else %}
+      <a href="{{ entry_url }}">View journal page &rarr;</a>
+    {% endif %}
     {% if post.slidesurl and post.slidesurl != "" %}<a href="{{ post.slidesurl }}">Slides</a>{% endif %}
-    {% if post.link %}<a href="{{ post.link }}">External link</a>{% endif %}
   </div>
 </article>

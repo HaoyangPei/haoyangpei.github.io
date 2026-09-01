@@ -13,7 +13,7 @@ topics:
   - U-Net
 links:
   - label: "Journal article"
-    url: "/publication/2023-rapid-3d-t1"
+    url: "https://doi.org/10.1002/mrm.29672"
   - label: "ISMRM proceedings"
     url: "https://archive.ismrm.org/2023/0678.html"
 ---

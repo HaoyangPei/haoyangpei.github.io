@@ -13,7 +13,7 @@ topics:
   - Accessibility
 links:
   - label: "IEEE Access article"
-    url: "/publication/2022-edge-computing-object-detection"
+    url: "https://doi.org/10.1109/ACCESS.2022.3157876"
   - label: "IROS conference paper"
     url: "https://ieeexplore.ieee.org/document/10342139"
 ---

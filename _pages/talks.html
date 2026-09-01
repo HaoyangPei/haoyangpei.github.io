@@ -5,8 +5,6 @@ permalink: /talks/
 author_profile: true
 ---
 
-<p class="wordwrap">Each title links to its official proceedings, abstract, or conference program page.</p>
-
 {% assign conferences_by_year = site.data.conferences | group_by: "year" %}
 {% for year in conferences_by_year %}
   <section class="conference-year" aria-labelledby="conference-year-{{ year.name }}">

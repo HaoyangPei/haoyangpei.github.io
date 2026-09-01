@@ -13,7 +13,7 @@ topics:
   - Deep learning
 links:
   - label: "Journal article"
-    url: "/publication/2024-deepemc-t2"
+    url: "https://doi.org/10.1002/mrm.30239"
   - label: "ISMRM proceedings"
     url: "https://archive.ismrm.org/2024/2783.html"
 ---

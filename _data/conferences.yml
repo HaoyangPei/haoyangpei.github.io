@@ -1,10 +1,10 @@
 - year: 2026
-  title: "A Unified All-in-One Self-Supervised Model for Accelerated 4D Radial MRI Across Organs, Resolutions, and Dynamics"
+  title: "All-in-One DeepGrasp: A Unified Self-Supervised Model for Accelerated 4D Radial MRI Across Organs, Resolutions, and Dynamics"
   event: "35th Annual Meeting of ISMRM Conference and Exhibition"
   format: "Oral"
   recognition: "Summa Cum Laude · AMPC Selection Award"
   authors: "Haoyang Pei, Jingjia Chen, Yao Wang, Hersh Chandarana, Li Feng"
-  url: "https://echo.ismrm.org/program/ISMRM2026/program-at-a-glance"
+  url: "https://echo.ismrm.org/abstracts/view/333be789-79e6-473f-be2b-ea78c51724e8"
 
 - year: 2026
   title: "DeepGrasp: A Unified All-in-One Self-Supervised Model for Accelerated 4D Radial MRI Across Organs, Resolutions, and Dynamics"
@@ -12,7 +12,7 @@
   format: "Oral"
   recognition: ""
   authors: "Haoyang Pei, Jingjia Chen, Yao Wang, Hersh Chandarana, Li Feng"
-  url: "https://echo.ismrm.org/program/SEDONA26"
+  url: "https://echo.ismrm.org/abstracts/view/d5f934e5-a549-4f86-8f7a-3c5b07d3df13"
 
 - year: 2025
   title: "Deep Learning-Optimized GRASP-Pro Reconstruction for Highly-Accelerated DCE-MRI"
@@ -27,7 +27,7 @@
   event: "34th Annual Meeting of ISMRM Conference and Exhibition"
   format: "Oral"
   recognition: ""
-  authors: "Haoyang Pei, Ding Xia, Xiang Xu, William Moore, Yao Wang, Hersh Chandarana, Li Feng"
+  authors: "Haoyang Pei, Yao Wang, Hersh Chandarana, Li Feng"
   url: "https://archive.ismrm.org/2025/0390.html"
 
 - year: 2025
@@ -51,7 +51,7 @@
   event: "34th Annual Meeting of ISMRM Conference and Exhibition"
   format: "Power Pitch"
   recognition: ""
-  authors: "Jingjia Chen, Haoyang Pei, Mary Bruno, Qiuting Wen, Christoph Maier, Daniel K. Sodickson, Hersh Chandarana, Li Feng"
+  authors: "Jingjia Chen, Haoyang Pei, Mary T. Bruno, Qiuting Wen, Christoph Maier, Daniel K. Sodickson, Hersh Chandarana, Li Feng"
   url: "https://archive.ismrm.org/2025/0092.html"
 
 - year: 2025
@@ -60,7 +60,7 @@
   format: "Oral"
   recognition: "YIA Finalist"
   authors: "Haoyang Pei, Ding Xia, Yao Wang, Hersh Chandarana, Daniel K. Sodickson, Li Feng"
-  url: "https://mrinrt.org/archive/"
+  url: "https://mrinrt.org/assets/img/program-schedule/archive/program-book_archive.pdf"
 
 - year: 2025
   title: "Hybrid Learning: A Novel Combination of Self-Supervised and Supervised Learning for Joint MRI Reconstruction and Denoising Without High-Quality Training Reference"
@@ -68,7 +68,7 @@
   format: "Digital Poster"
   recognition: ""
   authors: "Haoyang Pei, Ding Xia, Xiang Xu, William Moore, Yao Wang, Hersh Chandarana, Li Feng"
-  url: "https://mrinrt.org/archive/"
+  url: "https://mrinrt.org/assets/img/program-schedule/archive/program-book_archive.pdf"
 
 - year: 2025
   title: "Hybrid Learning: A Novel Combination of Self-Supervised and Supervised Learning for Joint MRI Reconstruction and Denoising Without High-Quality Training Reference"
@@ -76,7 +76,7 @@
   format: "Power Pitch"
   recognition: ""
   authors: "Haoyang Pei, Ding Xia, Xiang Xu, William Moore, Yao Wang, Hersh Chandarana, Li Feng"
-  url: "https://www.ismrm.org/workshops/2025/Body/"
+  url: "https://www.ismrm.org/workshops/2025/Body/power-pitches.htm"
 
 - year: 2025
   title: "DeepGrasp: Highly-Accelerated, Free-Breathing, Time-Resolved 4D Golden-Angle Radial MRI With Self-Supervised Learning"
@@ -84,7 +84,7 @@
   format: "Power Pitch"
   recognition: ""
   authors: "Haoyang Pei, Ding Xia, Yao Wang, Hersh Chandarana, Daniel K. Sodickson, Li Feng"
-  url: "https://www.ismrm.org/workshops/2025/Body/"
+  url: "https://www.ismrm.org/workshops/2025/Body/power-pitches.htm"
 
 - year: 2024
   title: "DeepGrasp4D: A General Framework for Highly-Accelerated Real-Time 4D Golden-Angle Radial MRI Using Deep Learning"
