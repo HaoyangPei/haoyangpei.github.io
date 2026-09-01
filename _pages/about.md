@@ -2,7 +2,7 @@
 layout: home
 permalink: /
 title: "Home"
-description: "Haoyang Pei is a Ph.D. candidate in Electrical Engineering at New York University working on AI for healthcare and medical imaging."
+description: "Haoyang Pei is a Ph.D. candidate in Electrical and Computer Engineering at New York University working on AI for healthcare and medical imaging."
 author_profile: false
 redirect_from:
   - /about/
