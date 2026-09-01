@@ -10,7 +10,7 @@ redirect_from:
 
 {% include base_path %}
 
-{% assign cv_path = "/files/CV_HaoyangPei_20260831.pdf" | prepend: base_path %}
+{% assign cv_path = "/files/CV_HaoyangPei_20260831.pdf?v=20260901" | prepend: base_path %}
 
 <div class="cv-document">
   <div class="cv-document__actions" aria-label="CV file options">
