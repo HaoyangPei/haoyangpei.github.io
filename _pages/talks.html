@@ -15,7 +15,10 @@ redirect_from:
       {% for conference in year.items %}
         <article class="conference-entry">
           <div class="conference-entry__meta">
-            <span>{{ conference.format }}</span>
+            <span class="conference-entry__format">
+              {% include conference-format-icon.html format=conference.format %}
+              <span>{{ conference.format }}</span>
+            </span>
             {% if conference.recognition and conference.recognition != "" %}
               {% assign recognitions = conference.recognition | split: " · " %}
               {% for recognition in recognitions %}<span class="conference-entry__recognition"><span class="visually-hidden">Recognition: </span>{{ recognition }}</span>{% endfor %}

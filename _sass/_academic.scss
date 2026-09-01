@@ -835,12 +835,43 @@ h2 { font-size: clamp(1.45rem, 2.5vw, 2rem); }
 .conference-entry__meta {
   display: flex;
   flex-wrap: wrap;
+  align-items: center;
   gap: 0.5rem 0.8rem;
   color: var(--muted);
   font-size: 0.7rem;
   font-weight: 700;
   letter-spacing: 0.08em;
   text-transform: uppercase;
+}
+
+.conference-entry__format {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.38rem;
+  padding: 0.24rem 0.52rem;
+  border: 1px solid #d0d8d7;
+  border-radius: 5px;
+  color: var(--ink);
+  background: #f5f7f6;
+  font-size: 0.68rem;
+  font-weight: 750;
+  letter-spacing: 0.055em;
+}
+
+.conference-entry__format-icon {
+  width: 0.8rem;
+  height: 0.8rem;
+  color: var(--accent);
+  fill: none;
+  stroke: currentColor;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+  stroke-width: 1.4;
+}
+
+.conference-entry__format-icon--filled {
+  fill: currentColor;
+  stroke: none;
 }
 
 .conference-entry__recognition {
