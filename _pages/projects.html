@@ -1,0 +1,24 @@
+---
+layout: archive
+title: "Projects"
+permalink: /projects/
+author_profile: true
+description: "Selected research projects in medical imaging, computational imaging, and computer vision."
+---
+
+{% include base_path %}
+
+<div class="project-grid">
+  {% assign ordered_projects = site.projects | sort: "order" %}
+  {% for project in ordered_projects %}
+    <a class="project-card" href="{{ project.url | prepend: base_path }}">
+      <span class="project-card__number">{% if forloop.index < 10 %}0{% endif %}{{ forloop.index }}</span>
+      <h2 class="project-card__title">{{ project.title }}</h2>
+      <p class="project-card__summary">{{ project.summary }}</p>
+      <ul class="project-topics" aria-label="Research areas">
+        {% for topic in project.topics limit: 3 %}<li>{{ topic }}</li>{% endfor %}
+      </ul>
+      <span class="project-card__link">View project &rarr;</span>
+    </a>
+  {% endfor %}
+</div>
