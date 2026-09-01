@@ -1,0 +1,21 @@
+{% case include.format %}
+  {% when "Oral" %}
+    <svg class="conference-entry__format-icon" viewBox="0 0 16 16" aria-hidden="true" focusable="false">
+      <rect x="5" y="1.5" width="6" height="8" rx="3"></rect>
+      <path d="M3.5 7.5a4.5 4.5 0 0 0 9 0M8 12v2.5M5.5 14.5h5"></path>
+    </svg>
+  {% when "Digital Poster" %}
+    <svg class="conference-entry__format-icon" viewBox="0 0 16 16" aria-hidden="true" focusable="false">
+      <rect x="1.5" y="2" width="13" height="11.5" rx="1.25"></rect>
+      <circle cx="5" cy="5.5" r="1"></circle>
+      <path d="m3.5 11 3-3 2.2 2 1.8-1.7 2 2.7"></path>
+    </svg>
+  {% when "Power Pitch" %}
+    <svg class="conference-entry__format-icon conference-entry__format-icon--filled" viewBox="0 0 16 16" aria-hidden="true" focusable="false">
+      <path d="M9.1 1.2 3.6 8.8h3.9L7 14.8l5.5-8H8.7l.4-5.6Z"></path>
+    </svg>
+  {% when "Conference Paper" %}
+    <svg class="conference-entry__format-icon" viewBox="0 0 16 16" aria-hidden="true" focusable="false">
+      <path d="M3 1.5h7l3 3v10H3zM10 1.5V5h3M5.2 8h5.5M5.2 10.5h5.5"></path>
+    </svg>
+{% endcase %}
