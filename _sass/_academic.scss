@@ -513,6 +513,8 @@ h2 { font-size: clamp(1.45rem, 2.5vw, 2rem); }
 
 .academic-layout--wide { grid-template-columns: minmax(0, var(--reading-width)); }
 
+.academic-layout--project { grid-template-columns: minmax(0, 1fr); }
+
 .sidebar {
   position: sticky !important;
   top: 104px;
@@ -623,9 +625,11 @@ h2 { font-size: clamp(1.45rem, 2.5vw, 2rem); }
 }
 
 .project-detail .page__title {
-  font-size: clamp(2rem, 4vw, 3.1rem);
-  line-height: 1.12;
+  font-size: clamp(1.8rem, 3vw, 2.55rem);
+  line-height: 1.16;
 }
+
+.project-detail { max-width: 100%; }
 
 .academic-page__meta,
 .academic-page__lead {
