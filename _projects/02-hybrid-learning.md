@@ -21,7 +21,7 @@ links:
 
 ## Overview
 
-Hybrid Learning combines self-supervised and supervised training in a two-stage framework for reconstructing accelerated, noisy MRI using only low-SNR reference data.
+Low-field MRI has an inherently weaker signal, so fully sampled, high-quality reference scans can take too long to acquire or may not be feasible—especially for breath-hold lung imaging. To address this challenge, Hybrid Learning combines self-supervised and supervised training in a two-stage framework for reconstructing accelerated, noisy MRI using only low-SNR reference data. In practical terms, it produces clearer MRI images without needing clean, high-quality examples for training.
 
 <figure class="project-overview-figure">
   <img src="{{ '/images/projects/hybrid-learning/overview.png' | relative_url }}" alt="Overview of the two-stage Hybrid Learning framework for MRI reconstruction and denoising without clean reference images." width="3108" height="2089" loading="lazy" decoding="async">
@@ -96,6 +96,6 @@ Hybrid Learning combines self-supervised and supervised training in a two-stage 
 ## Key contributions
 
 - Addressed limitations of conventional supervised learning, which depends on high-quality reference data, and purely self-supervised reconstruction.
-- Evaluated the method on simulated and real lung and brain MRI acquired at 0.55 T and 0.3 T.
-- Demonstrated improved reconstruction and denoising quality across acquisition settings and acceleration factors.
+- Evaluated the method on simulated and real breast, lung, and brain MRI across field strengths from 0.3 T to 3 T.
+- Demonstrated consistent improvements across radial, Cartesian, and spiral sampling patterns, multiple noise levels, and a wide range of acceleration factors.
 - Established a practical learning strategy for low-field MRI applications where high-SNR targets are difficult to acquire.
