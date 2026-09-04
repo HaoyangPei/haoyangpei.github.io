@@ -3,6 +3,7 @@ title: "DeepEMC-T2 Mapping: Deep Learning-Enabled T2 Mapping Based on Echo Modul
 short_title: "DeepEMC-T2 Mapping"
 permalink: /projects/deepemc-t2/
 order: 3
+period: "2023–2024"
 area: "Quantitative MRI"
 summary: "A deep learning method that generates quantitative tissue maps from fewer MRI images without slow dictionary matching."
 institution: "Center for Advanced Imaging Innovation and Research (CAI²R), NYU Langone Health"

@@ -3,6 +3,7 @@ title: "DeepGrasp: All-in-One Self-Supervised Model for Accelerated 4D Radial MR
 short_title: "DeepGrasp"
 permalink: /projects/deepgrasp/
 order: 1
+period: "2023–Present"
 area: "Accelerated MRI"
 summary: "A unified self-supervised reconstruction model for highly accelerated 4D golden-angle radial MRI across anatomy, resolution, and temporal dynamics."
 institution: "Center for Advanced Imaging Innovation and Research (CAI²R), NYU Langone Health"
@@ -12,10 +13,26 @@ topics:
   - 4D radial MRI
   - Foundation models
 links:
-  - label: "ISMRM 2026 workshop abstract"
-    url: "https://echo.ismrm.org/abstracts/view/d5f934e5-a549-4f86-8f7a-3c5b07d3df13"
-  - label: "ISMRM 2026 annual meeting abstract"
+  - label: "ISMRM 2026 Annual Meeting — All-in-One DeepGrasp"
     url: "https://echo.ismrm.org/abstracts/view/333be789-79e6-473f-be2b-ea78c51724e8"
+  - label: "ISMRM 2026 Reconstruction Workshop — DeepGrasp"
+    url: "https://echo.ismrm.org/abstracts/view/d5f934e5-a549-4f86-8f7a-3c5b07d3df13"
+  - label: "ISMRM 2025 Annual Meeting — Deep Learning-Optimized GRASP-Pro"
+    url: "https://archive.ismrm.org/2025/1136.html"
+  - label: "ISMRM 2025 Annual Meeting — Free-Breathing 4D Radial MRI"
+    url: "https://archive.ismrm.org/2025/2643.html"
+  - label: "ISMRM 2025 Annual Meeting — DeepGrasp-T2"
+    url: "https://archive.ismrm.org/2025/1687.html"
+  - label: "MR in RT 2025 — Time-Resolved 4D Radial MRI"
+    url: "https://mrinrt.org/archive/#schedule"
+  - label: "ISMRM Body MRI Workshop 2025 — DeepGrasp"
+    url: "https://www.ismrm.org/workshops/2025/Body/power-pitches.htm"
+  - label: "ISMRM 2024 Annual Meeting — DeepGrasp4D"
+    url: "https://archive.ismrm.org/2024/0040.html"
+  - label: "ISMRM 2024 Annual Meeting — DeepGrasp-Quant"
+    url: "https://archive.ismrm.org/2024/1072.html"
+  - label: "ISMRM 2023 Annual Meeting — DeepGraspT1"
+    url: "https://archive.ismrm.org/2023/4034.html"
 ---
 
 ## Overview

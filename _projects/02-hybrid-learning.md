@@ -3,6 +3,7 @@ title: "Hybrid Learning for Joint MRI Reconstruction and Denoising"
 short_title: "Hybrid Learning"
 permalink: /projects/hybrid-learning/
 order: 2
+period: "2024–2026"
 area: "Low-field MRI"
 summary: "A two-stage framework combining self-supervised and supervised learning for joint MRI reconstruction and denoising without high-quality training references."
 institution: "Center for Advanced Imaging Innovation and Research (CAI²R), NYU Langone Health"
@@ -15,8 +16,12 @@ image_compare: true
 links:
   - label: "Journal article"
     url: "https://doi.org/10.1088/1361-6560/ae792b"
-  - label: "ISMRM presentation"
+  - label: "ISMRM 2025 Annual Meeting — Hybrid Learning"
     url: "https://archive.ismrm.org/2025/0390.html"
+  - label: "MR in RT 2025 — Hybrid Learning"
+    url: "https://mrinrt.org/archive/"
+  - label: "ISMRM Body MRI Workshop 2025 — Hybrid Learning"
+    url: "https://www.ismrm.org/workshops/2025/Body/power-pitches.htm"
 ---
 
 ## Overview

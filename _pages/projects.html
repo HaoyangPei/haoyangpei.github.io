@@ -13,6 +13,7 @@ description: "Selected research projects in AI for healthcare, medical imaging, 
   {% for project in ordered_projects %}
     <a class="project-card" href="{{ project.url | prepend: base_path }}">
       <span class="project-card__number">{% if forloop.index < 10 %}0{% endif %}{{ forloop.index }}</span>
+      {% if project.period %}<span class="project-card__period">{{ project.period }}</span>{% endif %}
       <h2 class="project-card__title">{{ project.title }}</h2>
       <p class="project-card__summary">{{ project.summary }}</p>
       <span class="project-card__link">View project &rarr;</span>

@@ -3,6 +3,7 @@ title: "Rapid 3D T1 Mapping Using Deep Learning-Assisted Look-Locker Inversion R
 short_title: "Rapid 3D T1 Mapping"
 permalink: /projects/rapid-3d-t1-mapping/
 order: 4
+period: "2022–2023"
 area: "Quantitative MRI"
 summary: "A deep learning-assisted method that removes idle recovery time from 3D T1 mapping, shortening acquisition while preserving quantitative accuracy."
 institution: "Center for Advanced Imaging Innovation and Research (CAI²R), NYU Langone Health"

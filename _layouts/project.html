@@ -21,6 +21,12 @@ layout: default
             <dt>Advisors</dt>
             <dd>{{ page.advisors }}</dd>
           </div>
+          {% if page.period %}
+            <div>
+              <dt>Project period</dt>
+              <dd>{{ page.period }}</dd>
+            </div>
+          {% endif %}
         </dl>
 
         {% if page.topics %}

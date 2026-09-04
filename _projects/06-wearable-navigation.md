@@ -3,8 +3,9 @@ title: "Wireless Offloading of Visual Computation for a Wearable Navigation Syst
 short_title: "Wearable Visual Navigation"
 permalink: /projects/wearable-visual-navigation/
 order: 6
+period: "2021–2022"
 area: "Computer vision"
-summary: "An edge-assisted wearable vision system studying how video compression and viewing distance affect real-time object detection for visually impaired users."
+summary: "An edge-assisted wearable vision system that sends camera video to a nearby server for object detection; my work studied how compression and object distance affect accuracy."
 institution: "NSF SCC Project and NYU Video Lab, NYU Tandon School of Engineering"
 advisors: "Yao Wang"
 topics:
@@ -20,7 +21,12 @@ links:
 
 ## Overview
 
-This project investigates wireless visual-computing offload for a wearable navigation system, with emphasis on how compression and object distance affect detection performance.
+A wearable camera can help people with visual impairments detect pedestrians and obstacles, but running accurate AI directly on a small wearable device is limited by its computing power and battery life. This system compresses camera video and sends it over a wireless network to a nearby edge server for object detection, then returns the results to the user. My contribution focused on measuring how video compression, image resolution, and the distance of an object from the camera affect detection accuracy.
+
+<figure class="project-overview-figure">
+  <img src="{{ '/images/projects/wearable-navigation/overview.png' | relative_url }}" alt="Overview of a wearable navigation system that compresses multi-camera video, sends it wirelessly to an edge server for object detection, and returns detection results to the user." width="1013" height="738" loading="lazy" decoding="async">
+  <figcaption>Camera views are compressed on the wearable device, transmitted over the wireless network, and processed by a more powerful edge server. My work examined how compression, resolution, and object distance influence detection accuracy.</figcaption>
+</figure>
 
 ## Key contributions
 
