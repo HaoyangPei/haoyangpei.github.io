@@ -973,6 +973,15 @@ h2 { font-size: clamp(1.45rem, 2.5vw, 2rem); }
   font-style: italic;
 }
 
+.project-card__period {
+  margin: 0 0 0.5rem;
+  color: var(--muted);
+  font-size: 0.7rem;
+  font-weight: 700;
+  font-variant-numeric: tabular-nums;
+  letter-spacing: 0.04em;
+}
+
 .project-card__title {
   margin: 0;
   padding-right: 2.5rem;
@@ -997,7 +1006,7 @@ h2 { font-size: clamp(1.45rem, 2.5vw, 2rem); }
 
 .project-detail__meta {
   display: grid;
-  grid-template-columns: minmax(0, 2fr) minmax(220px, 1fr);
+  grid-template-columns: minmax(0, 2fr) minmax(180px, 1fr) minmax(110px, 0.55fr);
   gap: 1.25rem;
   margin: 1.25rem 0 0;
 }
